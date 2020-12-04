@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=yes">
+    <title>会动的简历</title>
+</head>
+
+
+<body>
+
+ <style id='style'>12</style>
+ <div id='demo'></div>
+ <div id="div1Wrapper">
+    <div id="div1"></div>
+ </div>
+ <style>
+     * {
+         margin: 0;
+         padding: 0;
+         }
+      * {
+          box-sizing: border-box;
+      } 
+      *::after {
+          box-sizing: border-box;
+      }  
+     #div1{
+    position: fixed;
+    right: 0;
+    top: 0;
+}
+#demo {
+  word-break: break-all;
+}
+#div1::before{
+    content:'';
+    display: block;
+
+    position: absolute;
+}
+#div1::after{
+    content:'';
+    display: block;
+  
+    position: absolute;
+    }
+@media (max-width: 500px) {
+  #html {
+    height: 50vh;
+    overflow: auto;
+  }
+
+  #div1Wrapper {
+    height: 50vh;
+    position: relative;
+    top: 0;
+    right: 0;  
+  }
+  #div1 {
+      position:relative;
+      top: 0;
+      right: 0;
+  }
+</style>
+ <script src="main.js"></script> 
+</body>
+</html>
